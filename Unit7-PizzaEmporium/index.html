@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unit 07 - Pizza Emporium</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Lora:400i" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+<header>
+<h1 id="company">Pizza Emporium</h1>
+<h2 id="slogan">Literal Objects</h2>
+</header>
+
+<main>
+<h1 class="pizza-title">Pizza Order Form</h1>
+
+<article>
+
+<h2>What I learned</h2>
+<ul class="objectives">
+	<li>Create a literal object with properties and methods</li>
+	<li>Set the properties in an object</li>
+	<li>Access properties in an object</li>
+	<li>Access methods of an object</li>
+	<li>Use math operators</li>
+	<li>Use string concatenation</li>
+	<li>Use getElementById and innerHTML to dynamically change text on the screen</li>
+</ul>
+<hr>
+
+
+<div id="pizza">
+
+<!-- Crust Options -->	
+<div id="crust">	
+<h2>Crust Options:</h2> 
+<input type="button" value="Thin Crust" id="thinCrust" onclick="pizza.setCrust('thin')">
+<input type="button" value="Thick Crust" id="thickCrust" onclick="pizza.setCrust('thick')">
+</div>
+<!-- Topping Options -->
+<div id="toppings">
+<h2>Topping Options:</h2> 
+<input type="button" value="Sausage" id="sausage" onclick="pizza.setTopping('sausage')">
+<input type="button" value="Pepperoni" id="pepperoni" onclick="pizza.setTopping('pepperoni')">
+</div>
+<!-- Size Options -->
+<div id="size">
+<h2>Size Options:</h2> 
+<input type="button" value="Small" id="smallPizza" onclick="pizza.setSize('small')">
+<input type="button" value="Large" id="largePizza" onclick="pizza.setSize('large')">
+</div>
+<!-- Build Pizza -->
+<div id="pizzaIsReady">
+<h2>Time to Eat:</h2> 
+<button name="food" type="submit" value="Build Pizza" class="bake" onclick="pizza.buildPizza()">Build Pizza</button>
+</div>
+<!-- Shopping List -->
+<div id="neededIngredients">
+<h2>Shopping List:</h2> 
+<button name="food" type="submit" value="Shopping List" class="shoppingList" onclick="pizza.shoppingList()">Shopping List</button>
+</div>
+</div>
+<hr>
+</article>
+
+<!-- Message Back to the User -->
+<div id="messageDisplay">
+<h2>Messages back to the user</h2>
+<p id="message"></p>
+<p id="messageList"></p>
+</div>
+
+
+</main>
+<footer>
+<p>Assignment for DGM2760 by James Hooper </p>
+</footer>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
